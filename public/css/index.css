@@ -1,0 +1,374 @@
+/* 首页样式 */
+/* 版心 */
+/* .wrapper{
+  margin: 0 auto;
+  width: 800px;
+} */
+
+/* 头部区域 */
+.header{
+  display: flex;
+  justify-content: space-between; /* 分散对齐，让内容均匀分布 */
+  align-items: center;
+  height: 110px;
+  background: white;
+}
+
+/* logo */
+
+.logo a {
+  display: block;
+  width: 151px;
+  height: 66px;
+  margin: 27px 600px 17px 45px;
+  background-image: url(../images/logo_color.png);
+  font-size: 0;
+}
+
+/* 导航 */
+.nav ul{
+  display: flex;
+}
+
+.nav li{
+  margin:0px 6px;
+  display: flex;
+  align-items: center;
+}
+
+.nav li a {
+  display: block;
+  padding: 6px 8px;
+  line-height: 27px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav li:not(:last-child)::after{
+  content: "|";
+  margin-left: 12px;
+}
+
+.nav li a:hover{
+  color: rgb(96, 14, 220);
+}
+
+.nav span{
+  display: block;
+}
+
+/* 语言 */
+.language {
+  width: 128px;
+  height: 34px;
+}
+
+/* 采用 咨询 */
+.adopt_consult{
+  display: flex;
+}
+
+/* 采用 */
+.adopt{
+  width: 110px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #1A1A1A;
+}
+
+/* 咨询 */
+.consult{
+  width: 110px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #EA5506;
+}
+
+/* 公司自我介绍*/
+.introduce{
+  font-family: "Noto Sans JP";
+}
+/* 公司自我介绍第一行 intr_news */
+/* 父容器设为相对定位 */
+.intr_news {
+  position: relative;
+  display: inline-block;
+}
+
+/* 主图片样式 */
+.main-image {
+  width: 1460px;
+  height: 800px;
+}
+
+/* 覆盖图片样式 */
+.overlay-image {
+  position: absolute;
+  width: 526px;
+  height: 430px;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%);
+  background-color: white;
+}
+
+/* 公司自我介绍第二行 intr_wwa */
+.intr_wwa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.intr_wwa img:first-of-type{
+  width: 88px;
+  height: 156px;
+}
+
+.intr_wwa img:last-of-type{
+  width: 819px;
+  height: 600px;
+}
+
+.intr_wwa h2{
+  font-size: 90px;
+  font-family: "Poppins";
+}
+
+.intr_wwa span {
+  display: block;
+  margin-top: -40px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.intr_wwa p:first-of-type{
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.intr_wwa p:last-of-type{
+  font-size: 16px;
+}
+
+/* 公司自我介绍第三行 intr_service */
+.service-h2{
+  position: relative;
+  width: 1920px;
+  height: 200px;
+  text-align: center;
+}
+.service-h2 h2{
+  font-size: 90px;
+  font-family: "Poppins";
+}
+.service-h2 span{
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  top: -20px;
+}
+
+/* 文本/图片/图片/文本 */
+.service-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1920px;
+  height: auto;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+}
+
+.service-items row:first-of-type{
+  margin-left: -100px;
+}
+
+.service-items row:last-of-type{
+  margin-right: -100px;
+}
+
+.service-items img:first-of-type{
+  width: 600px;
+  height: 400px;
+}
+
+.service-items img:last-of-type{
+  width: 600px;
+  height: 400px;
+}
+
+.service-items span{
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.service-items p{
+  font-size: 14px;
+  margin: 0 50px 40px 0;
+}
+
+.service-items h2{
+  margin: -50px 20px 40px 0;
+}
+
+/* 回到服务页面 */
+.service-page-back{
+  width: 1920px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-page-back .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  background-color: black;
+}
+
+.service-page-back span{
+  color: white;
+  font-size: 16px;
+}
+
+/* 联系方式 */
+.contact .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-picture{
+  width: 960px;
+  height: 410px;
+}
+
+.phone, .message{
+  width: 960px;
+  height: 205px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.phone{
+  background-color: #333333;
+}
+.message{
+  background-color: rgb(234, 85, 6);
+}
+
+.mes{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.icon-1{
+  margin-left: 50px;
+  width: 90px;
+  height: 89px;
+  opacity: 0.5;
+}
+
+.contact .text{
+  margin-left: 40px;
+  color: white;
+  line-height: 40px;
+}
+
+.phone .text div:nth-child(1){
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.phone .text div:nth-child(2) span:first-child{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.phone .text div:nth-child(2) span:last-child{
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.phone .text div:nth-child(3){
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+/* message */
+.icon-2{
+  width: 98px;
+  height: 68px;
+  opacity: 0.5;
+}
+
+.mes .text{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.mes .icon-3{
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+/* 招聘Recruit */
+.recruit{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recruit .bkpicture{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1000px;
+  height: 300px;
+  background-image: url(../images/pixta_109646792_XL.png);
+  color: white;
+}
+
+.recruit .bkpicture .pic-1{
+  position: absolute;
+  left: 0;
+}
+
+.recruit .bkpicture .text-1 p{
+  z-index: 1;
+  position: relative;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.recruit .bkpicture .text-2 h2{
+  z-index: 1;
+  position: relative;
+  font-size: 90px;  
+}
