@@ -372,3 +372,163 @@
   position: relative;
   font-size: 90px;  
 }
+
+/* 公司自我介绍剩余部分 */
+.introduce .intr_company{
+  display: flex;
+  justify-content: right;
+}
+
+.introduce .intr_company .text h2 {
+  font-size: 90px;
+  font-family: "Poppins";
+}
+
+.introduce .intr_company .text span{
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.introduce .intr_company .text span::before {
+  content:"";
+  display: inline-block;
+  width: 159px;
+  height: 1px;
+  background-color: #D8D8D8;
+  vertical-align: middle;
+  margin-right: 40px;
+  margin-top: -10px;
+}
+
+.introduce .intr_company .go-company div{
+  width: 370px;
+  height: 70px;
+  background-color: #333333;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.introduce .intr_company .text p{
+  font-size: 15px;
+}
+
+.introduce .intr_company .text h2,
+.introduce .intr_company .text span,
+.introduce .intr_company .text p{
+  margin-bottom: 50px;
+}
+
+.introduce .intr_company .text p{
+  line-height: 30px;
+}
+
+/* 新闻/博客 */
+.news_blog{
+  width: 1920px;
+}
+
+.news_blog .title{
+  margin-top: 200px;
+  margin-left: 500px;
+  margin-bottom: 150px;
+  width: 530px;
+  height: 150px;
+}
+
+.news_blog .title h2{
+  font-size: 90px;
+  font-family: "Poppins";
+}
+
+.news_blog .title span{
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.news_blog .title span::before {
+  content:"";
+  display: inline-block;
+  width: 79px;
+  height: 1px;
+  background-color: #D8D8D8;
+  vertical-align: middle;
+  margin-right: 30px;
+  margin-top: -10px;
+}
+
+.news_blog .nav-bar{
+  text-align: center;
+}
+
+.news_blog .nav-bar button {
+  width: 450px;
+  height: 72px;
+  font-size: 16px; /* 增加字体大小 */
+  padding: 10px 20px; /* 增加内边距，使按钮更大 */
+  background-color: transparent; /* 去掉默认背景颜色 */
+  border: 1px solid black; /* 添加自定义边框颜色 */
+  color: black; /* 设置按钮文本颜色 */
+  border-radius: 5px; /* 添加圆角 */
+  cursor: pointer; /* 鼠标悬停时显示手指 */
+  transition: background-color 0.3s, color 0.3s; /* 添加过渡效果 */
+}
+
+.news_blog .nav-bar button:hover {
+  background-color: #007bff; /* 悬停时背景颜色 */
+  color: white; /* 悬停时文本颜色 */
+}
+
+.news_blog .content-list{
+  width: 900px;
+  margin: 50px auto;
+}
+
+.news_blog .content-list li{
+  margin-bottom: 50px;
+  line-height: 30px;
+}
+
+.news_blog .content-list .time{
+  font-size: 14;
+  font-family: "Poppins";
+}
+
+.news_blog .content-list .nav-icon{
+  display: inline-block;
+  text-align: center;
+  width: 62px;
+  height: 34px;
+  border: 2px solid #EA5506;
+  color: #EA5506;
+}
+
+/* 回到新闻/博客页面 */
+.go-news_blog{
+  width: 1920px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-news_blog .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  background-color: black;
+}
+
+.go-news_blog span{
+  color: white;
+  font-size: 16px;
+}
+
+/* 尾部区域 */
